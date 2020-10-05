@@ -16,5 +16,5 @@ ReactDOM.render(
       <Route path="/" component={Home} exact />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );

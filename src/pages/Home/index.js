@@ -10,22 +10,22 @@ function Home() {
     <div>
       <Menu />
 
-      <BannerMain 
+      <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"Maiores hits de Bob Dylan"}
+        videoDescription="Bob Dylan Greatest Hits"
       />
 
-      <Carousel 
+      <Carousel
         ignoreFirstVideo
         category={dadosIniciais.categorias[0]}
       />
 
-      <Carousel 
+      <Carousel
         category={dadosIniciais.categorias[1]}
       />
 
-      <Carousel 
+      <Carousel
         category={dadosIniciais.categorias[2]}
       />
 

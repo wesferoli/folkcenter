@@ -1,0 +1,22 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Folk Clássico",
+      "descricao": "As mais famosas e importantes musicas do folk",
+      "cor": "#6bd1ff"
+    },
+    {
+      "id": 2,
+      "nome": "Neo Folk",
+      "descricao": "O folk renascido na atualidade",
+      "cor": "#00C86F"
+    },
+    {
+      "id": 3,
+      "nome": "Folk Covers",
+      "descricao": "Covers produzidos por artistas folk",
+      "cor": "#9cd33b"
+    }
+  ]
+}

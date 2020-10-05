@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+/* eslint-disable linebreak-style */
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const valoresIniciais = {
     nome: '',
     descricao: '',
     cor: '',
-  }
-
+  };
   const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(valoresIniciais);
 
@@ -20,48 +21,80 @@ function CadastroCategoria() {
     });
   }
 
-  function handleChange(event) {
+  function handleChange(infosDoEvento) {
     setValue(
-      event.target.getAttribute('name'),
-      event.target.value
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value,
     );
   }
 
+  useEffect(() => {
+    const URL = 'http://localhost:8080/categorias';
+    fetch(URL)
+      .then(async (respostaDoServidor) => {
+        const resposta = await respostaDoServidor.json();
+        setCategorias(resposta);
+      });
+  }, []);
+
+  //   setTimeout(() => {
+  //     setCategorias([
+  //       ...categorias,
+  //       {
+  //         id: 1,
+  //         nome: 'Folk Clássico',
+  //         descricao: 'As mais famosas e importantes musicas do folk',
+  //         cor: '#6bd1ff',
+  //       },
+  //       {
+  //         id: 2,
+  //         nome: 'Neo Folk',
+  //         descricao: 'O folk renascido na atualidade',
+  //         cor: '#00C86F',
+  //       },
+  //       {
+  //         id: 3,
+  //         nome: 'Folk Covers',
+  //         descricao: 'Covers produzidos por artistas folk',
+  //         cor: '#9cd33b',
+  //       },
+  //     ]);
+  //   }, 4 * 1000);
+  // }, []);
+
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria: {values.nome}</h1>
+      <h1>
+        Cadastro de Categoria:
+        {values.nome}
+      </h1>
 
-      <form onSubmit={function handleSubmit(event) {
-        event.preventDefault();
+      <form onSubmit={function handleSubmit(infosDoEvento) {
+        infosDoEvento.preventDefault();
         setCategorias([
           ...categorias,
-          values
+          values,
         ]);
 
         setValues(valoresIniciais);
-      }}>
+      }}
+      >
 
-        <FormField 
+        <FormField
           label="Nome da Categoria"
-          type="text"
+          type=""
           name="nome"
           value={values.nome}
           onChange={handleChange}
         />
-
-        <div>
-          <label>
-            Descrição:
-            <textarea
-              type="text"
-              value={values.descricao}
-              name="descricao"
-              onChange={handleChange}
-            />
-          </label>
-        </div>
-
-        <FormField 
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
+          onChange={handleChange}
+        />
+        <FormField
           label="Cor"
           type="color"
           name="cor"
@@ -69,23 +102,27 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <button>
+        <Button>
           Cadastrar
-        </button>
+        </Button>
       </form>
 
+      {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
+
       <ul>
-        {categorias.map((categoria) => {
-          return (
-            <li key={`${categoria}`}>
-              {categoria.nome}
-            </li>
-          )
-        })}
+        {categorias.map((categoria) => (
+          <li key={`${categoria.nome}`}>
+            {categoria.nome}
+          </li>
+        ))}
       </ul>
 
       <Link to="/cadastro/categoria">
-        Cadastrar Categoria
+        Ir para Home
       </Link>
     </PageDefault>
   );
