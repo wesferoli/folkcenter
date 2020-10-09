@@ -2,21 +2,128 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Folk Clássico",
-      "descricao": "As mais famosas e importantes musicas do folk",
-      "cor": "#6bd1ff"
+      "titulo": "Folk Clássico",
+      "cor": "#6bd1ff",
+      "link_extra": {
+        "text": "Playlist FolkClassics",
+        "url": "https://open.spotify.com/playlist/2h9sR7HJ1Z3nGfbvTHW3DY?si=O2mYvyZMQSmT9-qXDMgUxA"
+      }
     },
     {
       "id": 2,
-      "nome": "Neo Folk",
-      "descricao": "O folk renascido na atualidade",
-      "cor": "#00C86F"
+      "titulo": "Neo Folk",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Playlist Folk You 2020",
+        "url": "https://open.spotify.com/playlist/6pVZvDDeeOMIDNLXmnf70S?si=VQnA3qaBQYWCGWmt7Tql0w"
+      }
     },
     {
       "id": 3,
-      "nome": "Folk Covers",
-      "descricao": "Covers produzidos por artistas folk",
-      "cor": "#9cd33b"
+      "titulo": "Folk Covers",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Playlist Folk Covers",
+        "url": "https://open.spotify.com/playlist/1AmyLbk9BxExfYgNFjkwOu?si=SBwKXDvMSL6ROoAf5HcX9g"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Bob Dylan Greatest Hits",
+      "url": "https://www.youtube.com/watch?v=kHjzuqq3b44"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Bob Dylan - The Times They Are A-Changin'",
+      "url": "https://www.youtube.com/watch?v=90WD_ats6eE"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Tracy Chapman - Fast Car",
+      "url": "https://www.youtube.com/watch?v=DwrHwZyFN7M"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Joan Baez - Diamonds and Rust",
+      "url": "https://www.youtube.com/watch?v=IrVD0bP_ybg"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Simon & Garfunkel - The Boxer",
+      "url": "https://www.youtube.com/watch?v=l3LFML_pxlY"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Leonard Cohen - Hallelujah",
+      "url": "https://www.youtube.com/watch?v=ttEMYvpoR-k"
+    },
+    {
+      "id": 7,
+      "categoriaId": 2,
+      "titulo": "Mumford & Sons - I Will Wait",
+      "url": "https://www.youtube.com/watch?v=rGKfrgqWcv0"
+    },
+    {
+      "id": 8,
+      "categoriaId": 2,
+      "titulo": "The Lumineers - Sleep On The Floor",
+      "url": "https://www.youtube.com/watch?v=v4pi1LxuDHc"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Lucy Rose - Conversation",
+      "url": "https://www.youtube.com/watch?v=N9ShTxl7DpQ"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "First Aid Kit - Emmylou",
+      "url": "https://www.youtube.com/watch?v=PC57z-oDPLs"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Laura Marling - Sophia",
+      "url": "https://www.youtube.com/watch?v=j-TMl5oCRjk"
+    },
+    {
+      "id": 11,
+      "categoriaId": 3,
+      "titulo": "Pedro Vulpe - Careless Whisper",
+      "url": "https://www.youtube.com/watch?v=r4DRKeO2Y3w"
+    },
+    {
+      "id": 12,
+      "categoriaId": 3,
+      "titulo": "First Aid Kit - Red Dirt Girl",
+      "url": "https://www.youtube.com/watch?v=oJy_MQQhnog"
+    },
+    {
+      "id": 13,
+      "categoriaId": 3,
+      "titulo": "Laura Marling - Blues Run the Game",
+      "url": "https://www.youtube.com/watch?v=Cc6gZcTsirk"
+    },
+    {
+      "id": 14,
+      "categoriaId": 3,
+      "titulo": "The Lumineers - Democracy",
+      "url": "https://www.youtube.com/watch?v=w3mYNR-dExU"
+    },
+    {
+      "id": 15,
+      "categoriaId": 3,
+      "titulo": "Roo Panes - Stay Alive",
+      "url": "https://www.youtube.com/watch?v=BtdSUaHro7o"
     }
   ]
 }
