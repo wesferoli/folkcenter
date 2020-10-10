@@ -17,7 +17,7 @@ function YouTubeIframeResponsive({ youtubeID }) {
   );
 }
 
-YouTubeIframeResponsive.defautProps = {
+YouTubeIframeResponsive.defaultProps = {
 
 };
 
