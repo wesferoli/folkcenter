@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterBase } from './styles';
+import FooterBase from './styles';
 import Github from '../../assets/img/Github-logo.png';
 import Linkedin from '../../assets/img/Linkedin-logo.png';
 
