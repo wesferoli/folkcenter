@@ -26,6 +26,12 @@
         "text": "Playlist Folk Covers",
         "url": "https://open.spotify.com/playlist/1AmyLbk9BxExfYgNFjkwOu?si=SBwKXDvMSL6ROoAf5HcX9g"
       }
+    },
+    {
+      "titulo": "Indie Folk",
+      "descricao": "O Folk para todos os ouvidos",
+      "cor": "#ebfa14",
+      "id": 4
     }
   ],
   "videos": [
@@ -124,6 +130,24 @@
       "categoriaId": 3,
       "titulo": "Roo Panes - Stay Alive",
       "url": "https://www.youtube.com/watch?v=BtdSUaHro7o"
+    },
+    {
+      "titulo": "The Head And The Heart - Rivers and Roads (Live)",
+      "url": "https://www.youtube.com/watch?v=ReQluucmH9A",
+      "categoriaId": 4,
+      "id": 16
+    },
+    {
+      "titulo": "Joni Mitchell - Both Sides Now",
+      "url": "https://www.youtube.com/watch?v=aCnf46boC3I",
+      "categoriaId": 1,
+      "id": 17
+    },
+    {
+      "titulo": "Isaac Gracie - reverie",
+      "url": "https://www.youtube.com/watch?v=TME8EQrifgc",
+      "categoriaId": 4,
+      "id": 18
     }
   ]
 }
