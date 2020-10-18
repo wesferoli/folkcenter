@@ -19,7 +19,7 @@ function Home() {
   }, []);
 
   return (
-    <PageDefault paddingAll={0}>
+    <PageDefault paddingAll="0">
 
       {dadosIniciais.length === 0 && (<div>Loading...</div>)}
 
@@ -48,7 +48,6 @@ function Home() {
           />
         );
       })}
-
     </PageDefault>
   );
 }

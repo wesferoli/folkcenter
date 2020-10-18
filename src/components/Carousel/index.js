@@ -49,12 +49,15 @@ function Carousel({
 }
 
 Carousel.defaultProps = {
-  ignoreFirstVideo: Boolean,
+  ignoreFirstVideo: () => {},
 };
 
 Carousel.propTypes = {
-  ignoreFirstVideo: PropTypes.bool,
-  category: PropTypes.objectOf(PropTypes.string).isRequired,
+  ignoreFirstVideo: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.func,
+  ]),
+  category: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default Carousel;

@@ -26,7 +26,7 @@ function CadastroCategoria() {
         const resposta = await respostaDoServidor.json();
         setCategorias(resposta);
       });
-  });
+  }, []);
 
   return (
     <PageDefault>
@@ -41,7 +41,6 @@ function CadastroCategoria() {
           ...categorias,
           values,
         ]);
-
         clearForm();
       }}
       >
@@ -53,6 +52,7 @@ function CadastroCategoria() {
           value={values.nome}
           onChange={handleChange}
         />
+
         <FormField
           label="Descrição"
           type="textarea"
@@ -60,15 +60,16 @@ function CadastroCategoria() {
           value={values.descricao}
           onChange={handleChange}
         />
+
         <FormField
           label="Cor"
           type="color"
           name="cor"
-          value={values.cor}
+          value={values.cor.length === 0 ? '#FFFFFF' : values.cor}
           onChange={handleChange}
         />
 
-        <Button>
+        <Button type="submit">
           Cadastrar
         </Button>
       </form>
@@ -87,7 +88,7 @@ function CadastroCategoria() {
         ))}
       </ul>
 
-      <Link to="/cadastro/categoria">
+      <Link to="/">
         Ir para Home
       </Link>
     </PageDefault>
