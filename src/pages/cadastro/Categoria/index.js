@@ -31,9 +31,9 @@ function CadastroCategoria() {
 
   return (
     <PageDefault>
+
       <h1>
-        Cadastro de Categoria:
-        {values.nome}
+        Cadastro de Categoria
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -81,6 +81,10 @@ function CadastroCategoria() {
         <Button type="submit">
           Cadastrar
         </Button>
+
+        <Button as={Link} className="right-float-button" to="/">
+          Home
+        </Button>
       </form>
 
       {categorias.length === 0 && (
@@ -97,9 +101,6 @@ function CadastroCategoria() {
         ))}
       </ul>
 
-      <Link to="/">
-        Ir para Home
-      </Link>
     </PageDefault>
   );
 }

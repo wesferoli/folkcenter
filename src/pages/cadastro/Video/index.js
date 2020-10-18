@@ -68,11 +68,12 @@ function CadastroVideo() {
         <Button type="submit">
           Cadastrar
         </Button>
+
+        <Button as={Link} className="right-float-button" to="/cadastro/categoria">
+          Cadastrar Categoria
+        </Button>
       </form>
 
-      <Link to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Link>
     </PageDefault>
   );
 }

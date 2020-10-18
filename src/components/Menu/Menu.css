@@ -73,3 +73,7 @@ body {
     text-align: center;
   }
 }
+
+.right-float-button {
+  float: right;
+}
