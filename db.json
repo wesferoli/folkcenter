@@ -32,6 +32,12 @@
       "descricao": "O Folk para todos os ouvidos",
       "cor": "#ebfa14",
       "id": 4
+    },
+    {
+      "titulo": "Folk Brasil",
+      "descricao": "O melhor do Folk brasileiro",
+      "cor": "#00db9d",
+      "id": 5
     }
   ],
   "videos": [
